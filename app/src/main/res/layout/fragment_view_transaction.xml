@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ViewTransactionFragment">
+
+    <TextView
+        android:id="@+id/viewCreatedAtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Created At"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/viewDateTextView"
+        app:layout_constraintTop_toBottomOf="@+id/viewDateTextView" />
+
+    <TextView
+        android:id="@+id/viewCreatedAtTextView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Sample Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewCreatedAtLabel"
+        app:layout_constraintTop_toBottomOf="@+id/viewCreatedAtLabel" />
+
+    <TextView
+        android:id="@+id/viewTagLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Tag"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/viewTypeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/viewTypeTextView" />
+
+    <TextView
+        android:id="@+id/viewTagTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Sample Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewTagLabel"
+        app:layout_constraintTop_toBottomOf="@+id/viewTagLabel" />
+
+    <TextView
+        android:id="@+id/viewDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Transaction Date"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/viewTagTextView"
+        app:layout_constraintTop_toBottomOf="@+id/viewTagTextView" />
+
+    <TextView
+        android:id="@+id/viewDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Sample Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewDateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/viewDateLabel" />
+
+    <TextView
+        android:id="@+id/viewTypeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Sample Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewTypeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/viewTypeLabel" />
+
+    <TextView
+        android:id="@+id/viewTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Transaction Type"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/viewAmountTextView"
+        app:layout_constraintTop_toBottomOf="@+id/viewAmountTextView" />
+
+    <TextView
+        android:id="@+id/viewAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Amount"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/viewDetailTextView"
+        app:layout_constraintTop_toBottomOf="@+id/viewDetailTextView" />
+
+    <TextView
+        android:id="@+id/viewAmountTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Sample Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewAmountLabel"
+        app:layout_constraintTop_toBottomOf="@+id/viewAmountLabel" />
+
+    <TextView
+        android:id="@+id/viewDetailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Details"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/viewTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/viewTitleTextView" />
+
+    <TextView
+        android:id="@+id/viewDetailTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Sample Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewDetailLabel"
+        app:layout_constraintTop_toBottomOf="@+id/viewDetailLabel" />
+
+    <TextView
+        android:id="@+id/viewTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Title"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Sample Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewTitleLabel"
+        app:layout_constraintTop_toBottomOf="@+id/viewTitleLabel" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCreatedAtTextView8">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/editTransactionToDatabaseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="edit transaction"
+            android:text="Edit Transaction"
+            app:icon="@drawable/ic_baseline_edit_24" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

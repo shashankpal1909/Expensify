@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.expensify.fragment.HomeFragment"
+        android:label="Expensify">
+        <action
+            android:id="@+id/action_homeFragment_to_gettingStartedFragment"
+            app:destination="@id/gettingStartedFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addTransactionFragment"
+            app:destination="@id/addTransactionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewTransactionFragment"
+            app:destination="@id/viewTransactionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_monthlyTransactionFragment"
+            app:destination="@id/monthlyTransactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gettingStartedFragment"
+        android:name="com.example.expensify.fragment.GettingStartedFragment"
+        android:label="Getting Started"
+        tools:layout="@layout/fragment_getting_started">
+        <action
+            android:id="@+id/action_gettingStartedFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="com.example.expensify.fragment.AddTransactionFragment"
+        android:label="Add New Transaction"
+        tools:layout="@layout/fragment_add_transaction">
+        <action
+            android:id="@+id/action_addTransactionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="transaction"
+            app:argType="com.example.expensify.data.Transaction"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateTransactionFragment"
+        android:name="com.example.expensify.fragment.UpdateTransactionFragment"
+        android:label="Edit Transaction">
+        <action
+            android:id="@+id/action_updateTransactionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="transaction"
+            app:argType="com.example.expensify.data.Transaction" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewTransactionFragment"
+        android:name="com.example.expensify.fragment.ViewTransactionFragment"
+        android:label="Transaction Details"
+        tools:layout="@layout/fragment_view_transaction">
+        <action
+            android:id="@+id/action_viewTransactionFragment_to_updateTransactionFragment"
+            app:destination="@id/updateTransactionFragment" />
+        <argument
+            android:name="transaction"
+            app:argType="com.example.expensify.data.Transaction" />
+        <action
+            android:id="@+id/action_viewTransactionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_viewTransactionFragment_to_monthlyTransactionFragment"
+            app:destination="@id/monthlyTransactionFragment" />
+        <action
+            android:id="@+id/action_viewTransactionFragment_to_transactionListFragment"
+            app:destination="@id/transactionListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monthlyTransactionFragment"
+        android:name="com.example.expensify.fragment.MonthlyTransactionFragment"
+        android:label="Monthly Transactions"
+        tools:layout="@layout/fragment_monthly_transacation">
+        <action
+            android:id="@+id/action_monthlyTransactionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_monthlyTransactionFragment_to_viewTransactionFragment"
+            app:destination="@id/viewTransactionFragment" />
+        <action
+            android:id="@+id/action_monthlyTransactionFragment_to_transactionListFragment"
+            app:destination="@id/transactionListFragment" />
+        <action
+            android:id="@+id/action_monthlyTransactionFragment_to_addTransactionFragment"
+            app:destination="@id/addTransactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionListFragment"
+        android:name="com.example.expensify.fragment.TransactionListFragment"
+        android:label="Transactions List"
+        tools:layout="@layout/fragment_transaction_list">
+        <action
+            android:id="@+id/action_transactionListFragment_to_monthlyTransactionFragment"
+            app:destination="@id/monthlyTransactionFragment" />
+        <argument
+            android:name="item"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_transactionListFragment_to_viewTransactionFragment"
+            app:destination="@id/viewTransactionFragment" />
+    </fragment>
+</navigation>
